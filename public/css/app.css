@@ -169,7 +169,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFF;
   text-decoration: underline;
 }
-.customerheader a:hover {
+.customerheader a:hover, .customerheader a:active, .customerheader a:visited {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
 }
@@ -178,8 +178,8 @@ input[type=number]::-webkit-outer-spin-button {
   float: left;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 5px;
 }
 .arrow_box h2 {
   padding: 20px;

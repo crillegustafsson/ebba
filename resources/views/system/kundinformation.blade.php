@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->
-                <div class="col-xs-8">
+                <div class="col-xs">
                     <div class="">
                         <!-- /.panel-heading -->
                         <div class="panel-body none">

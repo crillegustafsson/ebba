@@ -19,9 +19,24 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="well">
-                        <i class="fa fa-info-circle" style="color: #f0ad4e"></i> <h4 style="display: inline-block; vertical-align: middle; color: #f0ad4e">Under uppbyggnad</h4>
-                        <p>Projektet Ebba är för tillfället under uppbyggnad, vilket innebär pappersarbete sålänge. Men som sagt, den som väntar på något gott... så håll ut! =)</p>
-                        <a href="https://www.google.com/maps/place/snostorp+vagen+20+halmstad" target="_blanf">test</a>
+                        <i class="fa fa-info-circle" style="color: #f0ad4e"></i> <h4 style="display: inline-block; vertical-align: middle; color: #f0ad4e">Ebba - Lagerhanteringssystem</h4>
+                        <p>Projektet Ebba är skapat av Christopher Gustafsson, Victor Niklasson, Joakim Wallin.</p>
+                        <br>
+                        <br>
+                        <h4>OBS!!!</h4>
+                        <br>
+                        Till testare,<br>
+                        <br>
+                        I dagsläget har vi endast kunder under rundan Sölvesborg, Lister.<br>
+                        <br>
+                        Eftersom endast bil 1 har produkter i sig är det att föredra att välja den bilen. Om du hellre vill köra bil 2 eller 3 bör du packa den först!<br>
+                        <br>
+                        Informationen som finns tillgänglig hos kunderna stämmer till viss del, den behöver dock uppdateras.<br>
+                        <br>
+                        Signera gärna en order och skicka iväg den så vidarebefodrar vi den om intresse finns av att se PDFen.<br>
+                        <br>
+                        Med vänlig hälsning,<br>
+                        Bloxsolution
                     </div>
                 </div>
             </div>

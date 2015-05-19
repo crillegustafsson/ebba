@@ -28,7 +28,10 @@ class CreateCustomerRequest extends Request {
 			'phone' => 'required',
 			'mail' => 'required',
 			'orgnr' => 'required',
-			'owner' => 'required'
+			'owner' => 'required',
+			'routes_id' => 'required',
+			'sort' => 'required',
+			'companyId' => 'required'
 		];
 	}
 

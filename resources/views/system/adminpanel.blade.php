@@ -337,7 +337,10 @@
                             <h3>Lägg till ny kund</h3><br>
                             <form class="form-group adminformpanel" role="form" method="POST" action="createCustomer">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
+                                <div class="form-group">
+                                    <label>Företags ID</label>
+                                        <input type="text" class="form-control" name="companyId">
+                                </div>
                                 <div class="form-group">
                                     <label>Företag</label>
                                     <input type="text" class="form-control" name="company">
@@ -349,6 +352,10 @@
                                 <div class="form-group">
                                     <label>Adress</label>
                                     <input type="text" class="form-control" name="adress">
+                                </div>
+                                <div class="form-group">
+                                    <label>Google Adress</label>
+                                    <input type="text" class="form-control" name="gadress">
                                 </div>
                                 <div class="form-group">
                                     <label>Telefon</label>
@@ -367,29 +374,25 @@
                                     <input type="text" class="form-control" name="owner">
                                 </div>
                                 <div class="form-group check">
-                                    <label>Ringkund</label>
-                                    <option value="0" name="routes_id">Nej</option>
-                                    <option value="1" name="routes_id">Ja</option>
+                                        <label>Ringkund</label>
+                                    <div class="checkbox">
+                                        <input type="checkbox" value="1" name="callupCustomer">
+                                    </div>
                                 </div>
                                 <div class="form-group check">
                                     <label>Orderkund</label>
-                                    <option value="0" name="routes_id">Nej</option>
-                                    <option value="1" name="routes_id">Ja</option>
+                                    <div class="checkbox">
+                                        <input type="checkbox" value="1" name="orderCustomer">
+                                    </div>
                                 </div>
                                 <div class="form-group check">
                                     <label>RundID</label>
-                                        <select>
-                                            <option value="1" name="routes_id"></option>
-                                        </select>
-                                    </div>
+                                        <input type="text" class="form-control" name="routes_id">
                                 </div>
                                 <div class="form-group check">
                                     <label>Sortering</label>
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="checkbox" value="1" name="sort">
-                                    </div>
+                                        <input type="text" class="form-control" name="sort">
                                 </div>
-
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
                                             Lägg till

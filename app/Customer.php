@@ -12,7 +12,13 @@ class Customer extends Model {
 		'phone',
 		'mail',
 		'orgnr',
-		'owner'
+		'owner',
+		'callupCustomer',
+		'orderCustomer',
+		'routes_id',
+		'sort',
+		'gadress',
+		'companyId'
 
 	];
 
