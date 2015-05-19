@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 12px;
+  margin: 25px 0 0 0;
+}
+li, p {
+  font-size: 12px;
+}
+.blank {
+  color: #fff;
+}
+#block30 {
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+#block50 {
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+}
+#size1 {
+  padding-top: -30px;
+  padding-bottom: -0px;
+}
+#block30 li {
+  display: block;
+}
+#produkterbox {
+  border-bottom: 1px solid #000;
+}
+#produkter {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.w50 {
+  width: 50px;
+}
+.w150 {
+  width: 150px;
+}
+.w100 {
+  width: 100px;
+}
+.w186 {
+  width: 186px;
+}
+.sp {
+  margin-right: -1px!important; 
+}
+#bold li {
+  font-weight: bold!important;
+}
+#produkter li {
+  display: inline-block;
+  border: 1px solid #000;
+  border-bottom: 0.0125em solid #000;
+  padding: 2.5px 5px;
+  margin-right: -5px;
+}
+#line {
+  height: 1px;
+  background: #000;
+}
+#block30 img {
+  margin-left: 30px;
+}
+.red {
+  color: red;
+}
+#size1#absolute, #size1#absolute #block50 {
+  position: absolute;
+}
+#block50#left50 {
+  margin-top: 30px;  
+}
+#block50#right50top {
+  margin-left: 400px;
+  margin-top: 30px;
+}
+#right50below {
+  margin-left: 400px;
+  margin-top: 81px; 
+}
+#signaturbox {
+  border: 1px solid #000;
+  height: 120px;
+  width: 300px:;
+}
+#tidbox, #vembox {
+  border: 1px solid #000;
+  height: 50px;
+  width: 300px:;
+}
+#tidbox p, #vembox p, #signaturbox p {
+  margin: 0px;
+  font-size: 15px;
+}
+#vembox h6, #tidbox h6, #signaturbox h6 {
+  margin: 0px;
+}
+#vembox #padding, #tidbox #padding, #signaturbox #padding {
+  padding: 5px;
+}
