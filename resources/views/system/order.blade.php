@@ -127,8 +127,8 @@
                                                             <td>
                                                                 ((order.newQuant))
                                                             </td>
-                                                            <td>
-                                                                <span ng-if="order.nd == 1">Check</span>
+                                                            <td class="center plus">
+                                                                <span ng-if="order.nd == 1"><i class="fa fa-check green"></i></span>
                                                             </td>
                                                             <td width="70" class="center">
                                                                 <button type="button" class="glyphicon glyphicon-pencil btn btn-warning" ng-click="go($index, order)" data-toggle="modal" data-target="#update"></button>
@@ -176,7 +176,7 @@
                 
                 <h4 class="modal-title" ng-cloak><div class="ftitle">Lägg till:</div> ((nameOfProduct))</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="existorder">
     <!--                         Add                               -->
                     <div ng-if="showForm==1" class="ProduktFinns" id="ProduktFinns"><h2 class="center">Produkten är redan inlagd!</h2><br><button class="btn btn-warning width100 modalinput" id="okbutton" data-dismiss="modal">OK</button></div>
                 <form name="testForm">
@@ -301,8 +301,8 @@
                                                             <td>
                                                                 ((order.newQuant))
                                                             </td>
-                                                            <td>
-                                                                <span ng-if="order.nd == 1">Check</span>
+                                                            <td class="center">
+                                                                <span ng-if="order.nd == 1"><i class="fa fa-check green"></i></span>
                                                             </td>
                                                         </tr>
 

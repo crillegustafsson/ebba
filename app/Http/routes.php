@@ -14,15 +14,48 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('hem', array('uses' => 'HomeController@index', 'as' => 'hem'));
+
 Route::get('saldo', array('uses' => 'StoragesController@index', 'as' => 'saldo'));
+
 Route::post('/updateSaldo/saldoUpdateAdmin/{id}', array('uses' => 'StoragesController@updateSaldoAdmin', 'as' => 'updateSaldoAdmin'));
 Route::get('/updateSaldo/{id}', array('uses' => 'StoragesController@updateSaldo', 'as' => 'updateSaldo'));
+
+Route::get('/updateStorage/{id}', array('uses' => 'AdminpanelController@updateStorage', 'as' => 'updateStorage'));
+Route::post('/updateStorageDo/{id}', array('uses' => 'AdminpanelController@updateStorageDo', 'as' => 'updateStorageDo'));
+
+Route::get('/updateRoute/{id}', array('uses' => 'AdminpanelController@updateRoute', 'as' => 'updateRoute'));
+Route::post('/updateRouteDo/{id}', array('uses' => 'AdminpanelController@updateRouteDo', 'as' => 'updateRouteDo'));
+
+Route::get('/updateCustomer/{id}', array('uses' => 'AdminpanelController@updateCustomer', 'as' => 'updateCustomer'));
+Route::post('/updateCustomerDo/{id}', array('uses' => 'AdminpanelController@updateCustomerDo', 'as' => 'updateCustomerDo'));
+
+Route::get('/updateUser/{id}', array('uses' => 'AdminpanelController@updateUser', 'as' => 'updateUser'));
+Route::post('/updateUserDo/{id}', array('uses' => 'AdminpanelController@updateUserDo', 'as' => 'updateUserDo'));
+
 Route::get('kunder', array('uses' => 'CustomersController@index', 'as' => 'kunder'));
 Route::get('test', array('uses' => 'HomeController@test', 'as' => 'test'));
 Route::get('adminpanel', array('uses' => 'AdminpanelController@index', 'as' => 'adminpanel'));
 Route::post('/createRoute', array('uses' => 'AdminpanelController@createRoute', 'as' => 'createRoute'));
 Route::post('/createProduct', array('uses' => 'AdminpanelController@createProduct', 'as' => 'createProduct'));
+Route::post('/createUser', array('uses' => 'AdminpanelController@createUser', 'as' => 'createUser'));
+
+Route::get('/deleteProduct/{id}', array('uses' => 'AdminpanelController@deleteProduct', 'as' => 'deleteProduct'));
+Route::post('/deleteProductDo/{id}', array('uses' => 'AdminpanelController@deleteProductDo', 'as' => 'deleteProductDo'));
+
+Route::get('/deleteRoute/{id}', array('uses' => 'AdminpanelController@deleteRoute', 'as' => 'deleteRoute'));
+Route::post('/deleteRouteDo/{id}', array('uses' => 'AdminpanelController@deleteRouteDo', 'as' => 'deleteRouteDo'));
+
+Route::get('/deleteStorage/{id}', array('uses' => 'AdminpanelController@deleteStorage', 'as' => 'deleteStorage'));
+Route::post('/deleteStorageDo/{id}', array('uses' => 'AdminpanelController@deleteStorageDo', 'as' => 'deleteStorageDo'));
+
+Route::get('/deleteCustomer/{id}', array('uses' => 'AdminpanelController@deleteCustomer', 'as' => 'deleteCustomer'));
+Route::post('/deleteCustomerDo/{id}', array('uses' => 'AdminpanelController@deleteCustomerDo', 'as' => 'deleteCustomerDo'));
+
+Route::get('/deleteUser/{id}', array('uses' => 'AdminpanelController@deleteUser', 'as' => 'deleteUser'));
+Route::post('/deleteUserDo/{id}', array('uses' => 'AdminpanelController@deleteUserDo', 'as' => 'deleteUserDo'));
+
 Route::post('adminUpdateProduct/updateProduct/{id}', array('uses' => 'AdminpanelController@updateProduct', 'as' => 'updateProduct'));
+
 Route::post('/createStorage', array('uses' => 'AdminpanelController@createStorage', 'as' => 'createStorage'));
 Route::post('/createCustomer', array('uses' => 'AdminpanelController@createCustomer', 'as' => 'createCustomer'));
 

@@ -216,12 +216,13 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 }
 /* Provisorisk lösning */
-#ProduktFinns {
-  height: 237px;
-}
-.ProduktFinns.ng-scope {
-  height: 257px;
+
+#exist .ProduktFinns {
+  height: 90%!important;
   z-index: 5;
+}
+#existorder .ProduktFinns {
+  height: 90%!important;
 }
 /* //Provisorisk lösning */
 .ProduktFinns{

@@ -22,6 +22,15 @@
                             </div>
 
                             <div class="form-group">
+                                <label>Välj kategori</label>
+                                <select class="form-control" name="type"><br>
+                                    <option value="stycksaker">Stycksaker</option>
+                                    <option value="5liter">5liter</option>
+                                    <option value="torr">Torrvaror</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
                                 <label>Artikelnummer</label>
                                 <input class="form-control" name="artnr" value="{{ $allaprodukter->artnr }}">
                             </div>
@@ -29,6 +38,16 @@
                             <div class="form-group">
                                 <label>Pris</label>
                                 <input class="form-control" name="price" value="{{ $allaprodukter->price }}">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Kvant/krt</label>
+                                <input class="form-control" name="quantitypackage" value="{{ $allaprodukter->quantitypackage }}">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Lager varning</label>
+                                <input class="form-control" name="miniQuant" value="{{ $allaprodukter->miniQuant }}">
                             </div>
 
                             <div class="form-group">

@@ -13,12 +13,12 @@
             <!-- /.row -->
     <div class="row">
         <div class="col-xs-12">
-    	                    <form class="form-group adminformpanel" role="form" method="POST" action="saldoUpdateAdmin/{{$saldot->products_id}}">
+    	                    <form class="form-group adminformpanel" role="form" method="POST" action="/updateRouteDo/{{$allarundor->id}}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group">
-                                <h3>Ändra Saldo för <b>{{ $saldot->products->productName }}</b></h3>
-                                <input type="text" class="form-control" name="quantity" value="{{$saldot->quantity}}">
+                                <label>Namn på lagret</label>
+                                <input type="text" class="form-control" name="name" value="{{$allarundor->name}}">
                             </div>
 
                             <div class="form-group">
@@ -26,7 +26,7 @@
                                         Ändra
                                 </button>
                                 
-                                <a href="/saldo" class="btn btn-danger">
+                                <a href="/adminpanel" class="btn btn-danger">
                                         Avbryt
                                 </a>
                             </div>

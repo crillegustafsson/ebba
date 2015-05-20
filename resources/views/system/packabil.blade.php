@@ -165,9 +165,9 @@
                 
                 <h4 class="modal-title">Från - Till</h4>
                 </div>
-                <div class="modal-body" ng-cloak>
+                <div class="modal-body" id="exist" ng-cloak>
     <!--                         Choose storages                             -->
-                     <div ng-if="showForm==1" class="ProduktFinns"><h2 class="center">Det finns en pågående transaktion <br> vänligen slutför denna innan du påbörjar en ny.</h2><br><button class="btn btn-warning width100 modalinput" data-dismiss="modal">OK</button></div><br>
+                     <div ng-if="showForm==1" class="ProduktFinns"><h3 class="center">Det finns en pågående transaktion <br> vänligen slutför denna innan du påbörjar en ny.</h3><br><br><button class="btn btn-warning width100 modalinput" data-dismiss="modal">OK</button><br><br></div>
                   <label for="from">Från</label> <select class="form-control input-sm" name="from" ng-model="selectedValFrom" ng-options="opt as opt.storageName for opt in StoragesOptions" ng-change="change()"></select> <br>
                   <label for="from">Till</label> <select class="form-control input-sm"  name="till" ng-model="selectedValTill" ng-options="opt as opt.storageName for opt in StoragesOptions" ng-change="change()"></select> <br><br>
                   <br>

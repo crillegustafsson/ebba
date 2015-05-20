@@ -60,12 +60,12 @@
                                                         <th>Typ</th>
                                                         <th>Saldo</th>
                                                         @if (Auth::user()->isAdmin)
-                                                        <th width="70">Ändra</th>
+                                                        <th width="130">Ändra saldo</th>
                                                         @endif
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach ($huvudlager as $huvudlager)
+                                                   @foreach ($huvudlager as $huvudlager)
                                                         <tr>
                                                             <td>
                                                                 {{ $huvudlager->products->productName }}
@@ -92,7 +92,7 @@
 
                                                             </td>
                                                             @if (Auth::user()->isAdmin)
-                                                            <td width="70" class="center">
+                                                            <td width="130" class="center">
                                                                 <a href="{{ URL::route('updateSaldo', $huvudlager->products->id) }}" class="glyphicon glyphicon-pencil btn btn-warning"></a>
                                                             </td>
                                                             @endif
@@ -122,7 +122,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="dataTable_wrapper">
-                                            <table class="table table-bordered table-hover table-striped dataTable5" id="dataTables2">
+                                            <table class="table table-bordered table-hover table-striped dataTable6" id="dataTables2">
                                                 <thead>
                                                     <tr>
                                                         <th>Namn</th>
@@ -130,6 +130,7 @@
                                                         <th>Kvantitet/krt</th>
                                                         <th>Typ</th>
                                                         <th>Saldo</th>
+                                                        <th width="130">Ändra saldo</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -150,6 +151,11 @@
                                                             <td>
                                                                 {{ $bil1->quantity }}
                                                             </td>
+                                                            @if (Auth::user()->isAdmin)
+                                                            <td width="130" class="center">
+                                                                <a href="{{ URL::route('updateSaldo', $huvudlager->products->id) }}" class="glyphicon glyphicon-pencil btn btn-warning"></a>
+                                                            </td>
+                                                            @endif
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
@@ -176,7 +182,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="dataTable_wrapper">
-                                            <table class="table table-bordered table-hover table-striped dataTable5" id="dataTables3">
+                                            <table class="table table-bordered table-hover table-striped dataTable6" id="dataTables3">
                                                 <thead>
                                                     <tr>
                                                         <th>Namn</th>
@@ -184,6 +190,7 @@
                                                         <th>Kvantitet/krt</th>
                                                         <th>Typ</th>
                                                         <th>Saldo</th>
+                                                        <th width="130">Ändra saldo</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -204,6 +211,11 @@
                                                             <td>
                                                                 {{ $bil2->quantity }}
                                                             </td>
+                                                            @if (Auth::user()->isAdmin)
+                                                            <td width="130" class="center">
+                                                                <a href="{{ URL::route('updateSaldo', $huvudlager->products->id) }}" class="glyphicon glyphicon-pencil btn btn-warning"></a>
+                                                            </td>
+                                                            @endif
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
@@ -230,7 +242,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="dataTable_wrapper">
-                                            <table class="table table-bordered table-hover table-striped dataTable5" id="dataTables4">
+                                            <table class="table table-bordered table-hover table-striped dataTable6" id="dataTables4">
                                                 <thead>
                                                     <tr>
                                                         <th>Namn</th>
@@ -238,6 +250,7 @@
                                                         <th>Kvantitet/krt</th>
                                                         <th>Typ</th>
                                                         <th>Saldo</th>
+                                                        <th width="130">Ändra saldo</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -258,6 +271,11 @@
                                                             <td>
                                                                 {{ $bil3->quantity }}
                                                             </td>
+                                                            @if (Auth::user()->isAdmin)
+                                                            <td width="130" class="center">
+                                                                <a href="{{ URL::route('updateSaldo', $huvudlager->products->id) }}" class="glyphicon glyphicon-pencil btn btn-warning"></a>
+                                                            </td>
+                                                            @endif
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
